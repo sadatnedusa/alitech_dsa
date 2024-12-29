@@ -388,6 +388,154 @@ tower_of_hanoi(3, 'A', 'C', 'B')
 
 ---
 
-### **Visual Representation**:
-Let’s draw pictures for clarity.
+### **Tower of Hanoi for 3 Disks: Textual Representation**
 
+Below is the step-by-step textual representation of the Tower of Hanoi process for 3 disks.
+
+---
+
+#### **Initial State**:
+```
+Peg A: [3, 2, 1]  (Source)
+Peg B: []         (Auxiliary)
+Peg C: []         (Destination)
+```
+
+---
+
+#### **Steps**:
+
+1. **Move disk 1 from A to C**:
+   ```
+   Peg A: [3, 2]
+   Peg B: []
+   Peg C: [1]
+   ```
+
+2. **Move disk 2 from A to B**:
+   ```
+   Peg A: [3]
+   Peg B: [2]
+   Peg C: [1]
+   ```
+
+3. **Move disk 1 from C to B**:
+   ```
+   Peg A: [3]
+   Peg B: [2, 1]
+   Peg C: []
+   ```
+
+4. **Move disk 3 from A to C**:
+   ```
+   Peg A: []
+   Peg B: [2, 1]
+   Peg C: [3]
+   ```
+
+5. **Move disk 1 from B to A**:
+   ```
+   Peg A: [1]
+   Peg B: [2]
+   Peg C: [3]
+   ```
+
+6. **Move disk 2 from B to C**:
+   ```
+   Peg A: [1]
+   Peg B: []
+   Peg C: [3, 2]
+   ```
+
+7. **Move disk 1 from A to C**:
+   ```
+   Peg A: []
+   Peg B: []
+   Peg C: [3, 2, 1]
+   ```
+
+---
+
+#### **Final State**:
+```
+Peg A: []         (Source)
+Peg B: []         (Auxiliary)
+Peg C: [3, 2, 1]  (Destination)
+```
+
+---
+
+
+
+```markdown
+### Tower of Hanoi for 3 Disks: Textual Representation
+
+#### Initial State:
+```
+Peg A: [3, 2, 1]  (Source)
+Peg B: []         (Auxiliary)
+Peg C: []         (Destination)
+```
+
+---
+
+#### Steps:
+
+1. **Move disk 1 from A to C**:
+   ```
+   Peg A: [3, 2]
+   Peg B: []
+   Peg C: [1]
+   ```
+
+2. **Move disk 2 from A to B**:
+   ```
+   Peg A: [3]
+   Peg B: [2]
+   Peg C: [1]
+   ```
+
+3. **Move disk 1 from C to B**:
+   ```
+   Peg A: [3]
+   Peg B: [2, 1]
+   Peg C: []
+   ```
+
+4. **Move disk 3 from A to C**:
+   ```
+   Peg A: []
+   Peg B: [2, 1]
+   Peg C: [3]
+   ```
+
+5. **Move disk 1 from B to A**:
+   ```
+   Peg A: [1]
+   Peg B: [2]
+   Peg C: [3]
+   ```
+
+6. **Move disk 2 from B to C**:
+   ```
+   Peg A: [1]
+   Peg B: []
+   Peg C: [3, 2]
+   ```
+
+7. **Move disk 1 from A to C**:
+   ```
+   Peg A: []
+   Peg B: []
+   Peg C: [3, 2, 1]
+   ```
+
+---
+
+#### Final State:
+```
+Peg A: []         (Source)
+Peg B: []         (Auxiliary)
+Peg C: [3, 2, 1]  (Destination)
+```
+```
